@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/onixsib/terraform-serverspace-server/compare/v1.0.0...v1.1.0) (2023-12-09)
+
+
+### Features
+
+* Add ingore changes in nic ([da9a145](https://github.com/onixsib/terraform-serverspace-server/commit/da9a145500b10e9f7a5ea857c21d85d3733a3386))
+
 ## 1.0.0 (2023-12-09)
 
 
