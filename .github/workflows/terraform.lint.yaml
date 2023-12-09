@@ -1,0 +1,14 @@
+name: Terraform HCL validation (PRs only)
+
+on:
+  pull_request:
+    paths: ["**.tf"]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  terraform-serverspace-server:
+    name: Terraform module
+    uses: ./.github/workflows/templates.terraform.pull_requests.lint.yaml
+
