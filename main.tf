@@ -16,6 +16,13 @@ resource "serverspace_server" "k3s_node" {
     network_type = "Isolated"
     bandwidth    = 0
   }
+  lifecycle {
+    ignore_changes = [
+      # Ignore changes to tags, e.g. because a management agent
+      # updates these based on some ruleset managed elsewhere.
+      nic,
+    ]
+  }
 }
 
 resource "null_resource" "node_dns_update_trigger" {
